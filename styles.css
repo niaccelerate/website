@@ -1,0 +1,84 @@
+:root {
+  color-scheme: light;
+  --paper: #ffffff;
+  --ink: #111111;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--paper);
+}
+
+body {
+  min-height: 100svh;
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-size: 16px;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+}
+
+main {
+  width: min(72ch, 100%);
+  margin: 0;
+  padding: 1rem;
+}
+
+h1,
+p {
+  margin-block: 0;
+}
+
+h1 {
+  font: inherit;
+}
+
+.byline {
+  margin-top: 1.5rem;
+  padding-left: min(16ch, 28vw);
+}
+
+.document-body {
+  min-height: 40vh;
+  margin-top: 3rem;
+}
+
+footer {
+  margin-top: 3rem;
+}
+
+footer p + p {
+  margin-top: 2rem;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration-thickness: 2px;
+}
+
+::selection {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+@media (max-width: 34rem) {
+  body {
+    font-size: 15px;
+  }
+
+  .byline {
+    padding-left: 8ch;
+  }
+}
